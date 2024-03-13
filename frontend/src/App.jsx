@@ -21,9 +21,10 @@ import CompetitionManagementPage from './components/pages/adminPages/Competition
 
 import { Authorization } from './components/utils/Authorization.jsx';
 import UserDetailsUpdatePage from './components/pages/UserDetailsUpdatePage.jsx';
-import AdminManageUsersPage from './components/pages/AdminManageUsersPage.jsx';
-import AdminCreateUserPage from './components/pages/AdminCreateUserPage.jsx';
+import AdminManageUsersPage from './components/pages/adminPages/AdminManageUsersPage';
+import AdminCreateUserPage from './components/pages/adminPages/AdminCreateUserPage.jsx';
 import CreateCompetition from './components/pages/adminPages/CreateCompetitionPage.jsx';
+import AdmiManageCategoryPage from './components/pages/adminPages/AdmiManageCategoryPage.jsx';
 
 function App() {
   return (
@@ -56,7 +57,7 @@ function App() {
                 path="/admin-user-participation-requests"
                 element={<AdminUserParticipationRequestPage />}
               />
-
+              <Route path="/admin-manage-categories" element={<AdmiManageCategoryPage />} />
               <Route path="/admin-manage-users" element={<AdminManageUsersPage />} />
               <Route path="/admin-create-user" element={<AdminCreateUserPage />} />
             </Route>

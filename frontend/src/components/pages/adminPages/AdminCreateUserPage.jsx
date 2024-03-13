@@ -1,4 +1,4 @@
-import AdminCreateUserForm from '../parts/AdminCreateUserForm';
+import AdminCreateUserForm from '../../parts/AdminCreateUserForm';
 
 const AdminCreateUserPage = () => {
     return (
